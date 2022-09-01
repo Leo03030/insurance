@@ -22,4 +22,4 @@ React JS
    c. Create a Redux Provider. 
       Accesssing store via "useStore" hook (https://react-redux.js.org/using-react-redux/accessing-store)
    d. Create a table view to display a list of packages
-   e. work in the feature/users branch   
+   e. work in the feature/users branch   (git checkout -b feature/users)
