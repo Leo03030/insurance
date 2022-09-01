@@ -1,0 +1,25 @@
+GIT:
+1. Local/Remote branch
+2. GIT Commands: checkout, fetch, pull, add (stage), commit, push
+*****************************************
+
+Ovik:
+
+React JS
+1. Redux. 
+   a. Create a new store for Insurance packages.
+   b. Async (Please refer to the time functionality) load packages from the packages.json file
+   c. Create a Redux Provider. 
+      Accesssing store via "useStore" hook (https://react-redux.js.org/using-react-redux/accessing-store)
+   d. Create a table view to display a list of packages
+   e. work in the feature/packages branch   
+
+Arman:
+React JS
+1. Redux. 
+   a. Create a new store for Insurance packages.
+   b. Async (Please refer to the time functionality) load packages from the users.json file
+   c. Create a Redux Provider. 
+      Accesssing store via "useStore" hook (https://react-redux.js.org/using-react-redux/accessing-store)
+   d. Create a table view to display a list of packages
+   e. work in the feature/users branch   
