@@ -3,6 +3,11 @@ GIT:
 2. GIT Commands: checkout, fetch, pull, add (stage), commit, push
 *****************************************
 
+*************************
+REDUX example of fetching and displaying data from a .json file
+https://hackernoon.com/fetching-data-from-a-json-file-with-a-react-and-redux-app
+
+
 Ovik:
 
 React JS
