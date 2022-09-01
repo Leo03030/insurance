@@ -22,7 +22,8 @@ React JS
 Arman:
 React JS
 1. Redux. 
-   a. Create a new store for Insurance packages.
+   a. Create a new store for Users (create a new users.json file):
+      User Name, contact info, address, identifier (email?)
    b. Async (Please refer to the time functionality) load packages from the users.json file
    c. Create a Redux Provider. 
       Accesssing store via "useStore" hook (https://react-redux.js.org/using-react-redux/accessing-store)
