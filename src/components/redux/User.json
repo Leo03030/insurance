@@ -1,0 +1,23 @@
+[
+  {
+    "Id": "f1",
+    "name": "Name1",
+    "address": "Random Address1",
+    "email": "RandomEmail1.com",
+    "plan": "Simple1"
+  },
+  {
+    "Id": "f2",
+    "name": "Name2",
+    "address": "Random Address2",
+    "email": "RandomEmail2.com",
+    "plan": "Simple2"
+  },
+  {
+    "Id": "f3",
+    "name": "Name3",
+    "address": "Random Address3",
+    "email": "RandomEmail3.com",
+    "plan": "Simple3"
+  }
+]

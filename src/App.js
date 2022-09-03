@@ -1,5 +1,6 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import Logo from "./components/Header/heder";
+import User from "./components/redux/User";
 
 import Video from "./components/Video";
 
@@ -30,6 +31,7 @@ const App = () => {
           <div>
             <NavLink to="/Insurance">Insurance</NavLink>
             <NavLink to="/Service">Services</NavLink>
+            <NavLink to="/UserInfo">User Info</NavLink>
           </div>
 
           <div className="home-time">{time}</div>
@@ -43,6 +45,7 @@ const App = () => {
       <Routes>
         <Route path="/Service" element={<Services />} />
         <Route path="/Insurance" element={<Insurance />} />
+        <Route path="/UserInfo" element={<User />} />
       </Routes>
       <Video />
     </div>
