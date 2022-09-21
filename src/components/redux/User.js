@@ -4,10 +4,13 @@ import { requestUsers } from "./action";
 import data from "./User.json";
 import "./User.css";
 const User = () => {
-  const { isLoading } = useSelector((state) => state);
+  debugger;
+  const { isLoading, usersData } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   useEffect(() => {
+    debugger;
+
     dispatch(requestUsers(data));
     // eslint-disable-next-line
   }, []);
@@ -15,16 +18,19 @@ const User = () => {
   return (
     <>
       {isLoading && <div className="loading">Data loading...</div>}
-      {data.map((data) => {
+      {usersData.map((user) => {
         return (
-          <div key={JSON.stringify(data.Id)} className="UserData_container">
-            <div className="content">
-              <h1>{JSON.stringify(data.name)}</h1>
-              <span>{JSON.stringify(data.email)}</span>
-              <h3>{JSON.stringify(data.address)}</h3>
-              <h1>{JSON.stringify(data.plan)}</h1>
+          <>
+            <div key={user.Id} className="UserData_container">
+              {/* <div className="content"> */}
+              <div className="User_info_list">{user.name}</div>
+
+              <div className="User_info_list">{user.email}</div>
+              <div className="User_info_list">{user.address}</div>
+              <div className="User_info_list">{user.plan}</div>
+              {/* </div> */}
             </div>
-          </div>
+          </>
         );
       })}
     </>

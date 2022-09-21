@@ -1,16 +1,15 @@
-import axios from "axios";
 import USER from "./constatns";
-import "./User.json";
+import userData from "./User.json";
 
 export const requestUsers = (data) => async (dispatch) => {
+  debugger;
   dispatch({
     type: USER.LOAD,
   });
   try {
-    const json = await axios.get("User.json");
     dispatch({
       type: USER.LOAD_SUCCESS,
-      usersData: json.data,
+      usersData: userData,
       isError: false,
     });
   } catch (e) {
