@@ -29,3 +29,19 @@ React JS
       Accesssing store via "useStore" hook (https://react-redux.js.org/using-react-redux/accessing-store)
    d. Create a table view to display a list of packages
    e. work in the feature/users branch   (git checkout -b feature/users)
+
+
+
+
+   All:
+   1. Combine together User + Packages stores into one export file and use it in App.js file
+   2. Update underlying User + Packages component to use store child items (u, p in the example 'store.js' file)
+   3. Push changes, Arman will be able to use it
+
+
+   Hovo:
+   1. Create nodejs application for authentication. Manage user session and allow navigate for authenticated user, show 403 (forbidden) status for non authenticated users
+
+
+   Arman:
+   1. Allow a user to choose one or more available packages and naviagate to the checkout page
