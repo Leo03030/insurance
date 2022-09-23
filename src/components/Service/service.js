@@ -1,7 +1,8 @@
 import React from "react";
+import '../Global.module.css'
 
 const Services = (props) => {
-  return <div>Services</div>;
+  return <main>Services</main>;
 };
 
 export default Services;

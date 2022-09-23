@@ -1,15 +1,10 @@
 import React from "react";
-import homepage from "../Img/homepage.jpg"
-import "./header.css"
+import homepage from "../Img/homepage.jpg";
 
-const Logo = () => {
+const Logo = (props) => {
+  return (
+      <img style={props.style} width={props.width} height={props.height} src={homepage} alt="homepage" />
+  );
+};
 
-    return(
-        <div className="homeLogo">
-            <img src={homepage} alt="homepage"/>
-        </div>
-    )
-}
-
-
-export default Logo
+export default Logo;
