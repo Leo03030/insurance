@@ -1,4 +1,4 @@
-import USER from "./constatns";
+import PACKAGES from "../constants/packages";
 
 const initialState = {
   usersData: [],
@@ -8,13 +8,13 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case USER.LOAD:
+    case PACKAGES.LOAD:
       return {
         ...state,
         isLoading: true,
         isError: false,
       };
-    case USER.LOAD_SUCCESS:
+    case PACKAGES.LOAD_SUCCESS:
       return {
         ...state,
         usersData: action.usersData,

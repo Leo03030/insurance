@@ -1,11 +1,9 @@
-.SignIn{
-   width: 80%;
-   margin-left: 10%;
-   background-color: black;
-   color: white;
-   height: 80vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.SignIn {
+  width: 80%;
+  margin-left: 10%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,16 +1,14 @@
-import axios from "axios";
-import USER from "./constatns";
-import "../redux/Packages.json";
+import USER from "../constants/users";
+import users from "../dataSources/users.json";
 
-export const requestUsers = (data) => async (dispatch) => {
+export const requestUsers = () => async (dispatch) => {
   dispatch({
     type: USER.LOAD,
   });
   try {
-    const json = await axios.get("packages.json");
     dispatch({
       type: USER.LOAD_SUCCESS,
-      usersData: json.data,
+      usersData: users,
       isError: false,
     });
   } catch (e) {

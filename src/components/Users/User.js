@@ -1,21 +1,19 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { requestUsers } from "./action";
-import data from "../redux/Packages.json";
-import '../Global.module.css'
+import { requestUsers } from "../redux/actions/users";
+import "../Global.module.css";
 const User = () => {
-  const { isLoading } = useSelector((state) => state);
+  const { isLoading, usersData } = useSelector((state) => state.users);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(requestUsers(data));
+    dispatch(requestUsers());
     // eslint-disable-next-line
   }, []);
 
   return (
     <main>
-      {isLoading &&
-      <div className="loading">Data loading...</div>}
+      {isLoading && <div className="loading">Data loading...</div>}
       <table style={{ width: "80%", marginLeft: "10%" }} border="3">
         <thead>
           <tr style={{ backgroundColor: "grey" }}>
@@ -28,9 +26,9 @@ const User = () => {
         </thead>
 
         <tbody>
-          {data.users.map((el) => {
+          {usersData.map((el) => {
             return (
-              <tr>
+              <tr key={el.id}>
                 <td>{el.Id}</td>
                 <td>{el.name}</td>
                 <td>{el.address}</td>
@@ -41,7 +39,7 @@ const User = () => {
           })}
         </tbody>
       </table>
-      </main>
+    </main>
   );
 };
 

@@ -1,7 +1,6 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import Logo from "./components/Header/heder";
-import User from "./components/redux/User";
-import Time from "./components/Header/headerTimer";
+import User from "./components/Users/User";
 
 import "./components/Video";
 import "./App.css";
@@ -10,6 +9,7 @@ import Insurance from "./components/Insurance/insurance";
 import Services from "./components/Service/service";
 import Login from "./components/Login/Login";
 import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 import { Wrapper } from "./components/Wrapper/Wrapper";
 
 const App = () => {
@@ -21,6 +21,9 @@ const App = () => {
           <NavLink className="Main_tabs_links" to="/Home">
             Home
           </NavLink>
+          <NavLink className="Main_tabs_links" to="/About">
+            About Us
+          </NavLink>
           <NavLink className="Main_tabs_links" to="/Insurance">
             Insurance
           </NavLink>
@@ -30,15 +33,16 @@ const App = () => {
           <NavLink className="Main_tabs_links" to="/UserInfo">
             User Info
           </NavLink>
-        </div>
-
-        <Time />
-        <div className="Main_Login">
           <NavLink className="Main_tabs_links" to="/Login">
-            <button style={{ marginRight: "20px" }}> Sign In </button>
+            <button> Sign In </button>
           </NavLink>
         </div>
+
+        <div className="time"></div>
       </header>
+      <footer>
+        <Footer />
+      </footer>
 
       <Routes>
         <Route path="/Home" element={<Home />} />
