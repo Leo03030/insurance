@@ -4,13 +4,15 @@ import User from "./components/Users/User";
 
 import "./components/Video";
 import "./App.css";
+import { Wrapper } from "./Ui/Wrapper/Wrapper";
 
-import Insurance from "./components/Insurance/insurance";
 import Services from "./components/Service/service";
 import Login from "./components/Login/Login";
 import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer";
-import { Wrapper } from "./components/Wrapper/Wrapper";
+import Insurance from "./components/Insurance/insurance";
+import Cart from "./Ui/Cart/Cart";
+
+
 
 const App = () => {
   return (
@@ -35,14 +37,13 @@ const App = () => {
           </NavLink>
           <NavLink className="Main_tabs_links" to="/Login">
             <button> Sign In </button>
-          </NavLink>
-        </div>
 
-        <div className="time"></div>
+          </NavLink>
+          <NavLink className="Main_tabs_links" to="/Cart" >
+            <Cart/> 
+           </NavLink>
+        </div>
       </header>
-      <footer>
-        <Footer />
-      </footer>
 
       <Routes>
         <Route path="/Home" element={<Home />} />
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/Service" element={<Services />} />
         <Route path="/Insurance" element={<Insurance />} />
         <Route path="/UserInfo" element={<User />} />
+        <Route path="/Cart" element={<Cart/>}/>
       </Routes>
     </Wrapper>
   );

@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { requestPackages } from "../redux/actions/packages";
 import "../Global.module.css";
-import Input from "../Input";
-import { Wrapper } from "../Wrapper/Wrapper";
+import { Wrapper } from "../../Ui/Wrapper/Wrapper";
+import Input from "../../Ui/Input/Input";
 
 const Insurance = (props) => {
   const { isLoading, usersData } = useSelector((state) => state.packages);
